@@ -37,6 +37,27 @@ VALUES
     );
 UNLOCK TABLES;
 
+LOCK TABLES Hotel_contact WRITE;
+INSERT INTO Hotel_contact
+VALUES
+    (
+        '1',
+        '9875746387'
+    ),
+    (
+        '2',
+        '8947563846'
+    ),
+    (
+        '2',
+        '8947563848'
+    ),
+    (
+        '3',
+        '9447563846'
+    );
+UNLOCK TABLES;
+
 
 LOCK TABLES Booking WRITE;
 INSERT INTO Booking 
@@ -48,7 +69,7 @@ VALUES
         'abcd@gmail.com',
         '89744657392',
         'Cash',
-        'Event booking'
+        'E'
     ),
     (
         '2',
@@ -57,7 +78,7 @@ VALUES
         'asadf@gmail.com',
         '89744657334',
         'Online',
-        'Room booking'
+        'R'
     ),
     (
         '3',
@@ -66,7 +87,7 @@ VALUES
         'jdef@gmail.com',
         '89755657392',
         'Cash',
-        'Room booking'
+        'R'
     ),
     (
         '4',
@@ -75,7 +96,7 @@ VALUES
         'abcfghd@gmail.com',
         '89324657392',
         'Cash',
-        'Room booking'
+        'R'
     ),
     (
         '5',
@@ -84,7 +105,7 @@ VALUES
         'abcfdgfd@gmail.com',
         '8974557392',
         'Online',
-        'Event booking'
+        'E'
     ),
     (
         '6',
@@ -93,7 +114,7 @@ VALUES
         'abcfdfdgfd@gmail.com',
         '8974557000',
         'Online',
-        'Event booking'
+        'E'
     );
 UNLOCK TABLES;
 
@@ -141,24 +162,24 @@ VALUES
         '5',
         '3',
         '6000',
-        '2020-12-14 10:00:00',
-        '2020-12-15 10:00:00'
+        '2020-12-14',
+        '2020-12-15'
     ),
     (
         '3',
         '4',
         '3',
         '6000',
-        '2020-10-19 10:00:00',
-        '2020-10-20 10:00:00'
+        '2020-10-19',
+        '2020-10-20'
     ),
     (
         '4',
         '7',
         '5',
         '6000',
-        '2020-10-14 10:00:00',
-        '2020-12-15 10:00:00'
+        '2020-10-14',
+        '2020-12-15'
     );
 UNLOCK TABLES;
 
@@ -167,13 +188,13 @@ INSERT INTO B_Final_Charge
 VALUES
     (
         '900',
-        '2020-12-21 13:00:00',
-        '2020-12-22 22:00:00',
+        '2020-12-21',
+        '2020-12-22',
         '33',
         '3',
         '6000',
-        '2020-12-14 10:00:00',
-        '2020-12-15 10:00:00',
+        '2020-12-14',
+        '2020-12-15',
         '35700'
     );
 UNLOCK TABLES;
