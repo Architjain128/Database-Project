@@ -44,26 +44,6 @@ CREATE TABLE Hotel_contact (
     ON UPDATE CASCADE
     ON DELETE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
-LOCK TABLES Hotel_contact WRITE;
-INSERT INTO Hotel_contact
-VALUES
-    (
-        '1',
-        '9875746387'
-    ),
-    (
-        '2',
-        '8947563846'
-    ),
-    (
-        '2',
-        '8947563848'
-    ),
-    (
-        '3',
-        '9447563846'
-    );
-UNLOCK TABLES;
 
 
 DROP DATABASE IF EXISTS Booking;
